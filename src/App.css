@@ -1,0 +1,66 @@
+@import url('http://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+input{
+    aspect-ratio: 1/1;
+    width:3rem;
+    background-color: #121420;
+    color: white;
+    outline:none;
+    box-shadow:0 0 18px 5px rgba(255, 255, 255, 0.474);
+
+    /* padding:0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  */  font-size: 2rem; 
+text-align: center;
+margin-left: 0.5rem;
+border:none;
+}
+
+button{
+  aspect-ratio: 1/1;
+  width:3rem;
+  font-size: 1rem; 
+text-align: center;
+margin-left: 0.5rem;
+border:none;
+}
+
+#root{
+    
+    background-image: url('./media/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.fixed
+{
+  background-color: green;
+}
+
+
+h1{
+    color: aliceblue;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+*{
+    box-sizing: border-box;
+}  

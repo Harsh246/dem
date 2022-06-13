@@ -1,0 +1,34 @@
+#pics {
+
+  margin-top: 4rem;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+#pcontainer {
+  width: 25%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  
+}
+
+#pcontainer img {
+  width: 48%;
+  height: 48%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  border-radius: 10px;
+  border: 5px solid #575966;
+}

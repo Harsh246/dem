@@ -1,0 +1,20 @@
+.buttons
+{
+    margin-bottom: 2rem;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.check-btn
+{
+    background-color: rgb(43, 121, 35);
+    color:white;
+    cursor: pointer;
+}
+
+.fixed
+{
+    background-color: green;
+    
+}
