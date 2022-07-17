@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --orange: hsl(25, 97%, 53%);
+
+  --white: hsl(0, 0%, 100%);
+  --lightgray: hsl(217, 12%, 63%);
+  --gray: hsl(216, 12%, 54%);
+  --blue: rgb(27, 33, 42);
+  --darkblue: hsl(216, 12%, 8%);
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-image: url('https://images.squarespace-cdn.com/content/v1/585a99f79de4bb73f204e4f6/1580732426319-JDL3AMRC9ZTG6QZ8NHUL/image-asset.jpeg?format=2500w');
+  backdrop-filter: blur(20px);
+  background-position: right;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom;
+
+  font-size: 15px;
+  max-width: 100vw;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+h2,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+p {
+  line-height: 1.5;
 }
