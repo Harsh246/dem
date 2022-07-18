@@ -1,0 +1,29 @@
+  const sortArray = (arr, orderBy, query) => {
+    switch (orderBy) {
+      case 'asc':
+      default:
+        return arr.sort((a, b) => (a[query] > b[query] ? 1 : b[query] > a[query] ? -1 : 0))
+      case 'desc':
+        return arr.sort((a, b) => (a[query] < b[query] ? 1 : b[query] < a[query] ? -1 : 0))
+    }
+  }
+  
+  //states
+   const [rowData, setRowData] = useState(rows)
+  const [orderDirection, setOrderDirection] = useState({ satisfactionScore: 'asc', netPromoterScore: 'asc' })
+
+//
+  const handleSortRequest = query => {
+    setRowData(sortArray(rows, orderDirection[query], query))
+
+    setOrderDirection({ ...orderDirection, [query]: orderDirection[query] === 'asc' ? 'desc' : 'asc' })
+  }
+//
+   <TableCell onClick={() => handleSortRequest('satisfactionScore')}>
+                {' '}
+                <TableSortLabel active={true} direction={orderDirection.satisfactionScore}>
+                  Satisfaction Score&nbsp;($)
+                </TableSortLabel>
+              </TableCell>
+              
+              
